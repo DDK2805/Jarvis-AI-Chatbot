@@ -75,6 +75,18 @@ function takeCommand(message) {
     } else if (message.includes("open facebook")) {
         window.open("https://facebook.com", "_blank");
         speak("Opening Facebook...");
+    } else if (message.includes("weather")) {
+        // Provide a response for checking the weather
+        speak("Please check your local weather app for the latest updates.");
+    } else if (message.includes("news")) {
+        window.open("https://news.google.com", "_blank");
+        speak("Opening Google News...");
+    } else if (message.includes("play music")) {
+        speak("Playing your favorite playlist.");
+        // Here you can add functionality to play music if integrated with a music service
+    } else if (message.includes("stop music")) {
+        speak("Stopping the music.");
+        // Here you can add functionality to stop music if integrated with a music service
     } else if (message.includes('what is') || message.includes('who is') || message.includes('what are')) {
         window.open(`https://www.google.com/search?q=${encodeURIComponent(message)}`, "_blank");
         const finalText = "This is what I found on the internet regarding " + message;
@@ -96,6 +108,27 @@ function takeCommand(message) {
         window.open('Calculator:///');
         const finalText = "Opening Calculator";
         speak(finalText);
+    } else if (message.includes('reminder')) {
+        speak("What would you like me to remind you about?");
+        // Additional functionality can be added here to set reminders
+    } else if (message.includes('schedule')) {
+        speak("Checking your schedule for today.");
+        // Additional functionality can be added here to check the user's schedule
+    } else if (message.includes('email')) {
+        speak("Opening your email.");
+        window.open("https://mail.google.com", "_blank");
+    } else if (message.includes('map')) {
+        speak("Opening Google Maps.");
+        window.open("https://maps.google.com", "_blank");
+    } else if (message.includes('quote')) {
+        speak("Here is a quote for you: 'The best way to predict the future is to invent it.' - Alan Kay");
+    } else if (message.includes('motivation')) {
+        speak("Keep going! Every step you take is a step closer to your goal.");
+    } else if (message.includes('inspire me')) {
+        speak("Believe you can and you're halfway there.");
+    } else if (message.includes('history')) {
+        speak("Opening your browsing history.");
+        // Additional functionality can be added here to show browsing history
     } else {
         window.open(`https://www.google.com/search?q=${encodeURIComponent(message)}`, "_blank");
         const finalText = "I found some information for " + message + " on Google";
