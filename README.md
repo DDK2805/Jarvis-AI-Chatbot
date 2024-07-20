@@ -8,3 +8,5 @@ Jarvis-AI-Chatbot is an interactive AI chatbot inspired by Jarvis from Iron Man.
 - AI responses to user inputs.
 - Customizable avatar and background.
 - Smooth animations and responsive design.
+
+![imgGallery](https://github.com/user-attachments/assets/01126203-2bff-49b7-8812-25e526d92e2a)
